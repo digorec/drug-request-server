@@ -4,3 +4,8 @@ plugin:
     author: Macrobit
     icon: oc-icon-medkit
     homepage: ''
+navigation:
+    lpu-menu-item:
+        label: 'macrobit.drugreq::lang.plugin.lpu.backend-menu-item-name'
+        url: macrobit/drugreq/lpu
+        icon: icon-ambulance
