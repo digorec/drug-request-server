@@ -1,0 +1,8 @@
+# ===================================
+#  Extended User Field Definitions
+# ===================================
+
+lpu:
+    label: 'macrobit.drugreq::lang.plugin.profile.lpu'
+    tab: 'macrobit.drugreq::lang.plugin.tab.profile'
+    span: auto
