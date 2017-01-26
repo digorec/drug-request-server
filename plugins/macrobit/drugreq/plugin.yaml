@@ -6,6 +6,6 @@ plugin:
     homepage: ''
 navigation:
     lpu-menu-item:
-        label: 'macrobit.drugreq::lang.plugin.lpu.backend-menu-item-name'
+        label: 'macrobit.drugreq::lang.lpu.backend-menu-item-name'
         url: macrobit/drugreq/lpu
         icon: icon-ambulance

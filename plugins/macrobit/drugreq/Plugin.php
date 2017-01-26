@@ -2,9 +2,9 @@
 
 use October\Rain\Support\Facades\File;
 use October\Rain\Support\Facades\Yaml;
-use System\Classes\PluginBase;
 use RainLab\User\Models\User as UserModel;
 use RainLab\User\Controllers\Users as UsersController;
+use System\Classes\PluginBase;
 
 class Plugin extends PluginBase
 {

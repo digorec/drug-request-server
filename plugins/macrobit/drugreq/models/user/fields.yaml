@@ -3,6 +3,6 @@
 # ===================================
 
 lpu:
-    label: 'macrobit.drugreq::lang.plugin.profile.lpu'
-    tab: 'macrobit.drugreq::lang.plugin.tab.profile'
+    label: 'macrobit.drugreq::lang.profile.lpu'
+    tab: 'macrobit.drugreq::lang.tab.profile'
     span: auto
