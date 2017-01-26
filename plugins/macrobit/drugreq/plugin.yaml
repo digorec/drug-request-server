@@ -1,0 +1,6 @@
+plugin:
+    name: 'macrobit.drugreq::lang.plugin.name'
+    description: 'macrobit.drugreq::lang.plugin.description'
+    author: Macrobit
+    icon: oc-icon-medkit
+    homepage: ''
