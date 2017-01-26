@@ -1,4 +1,9 @@
-# Installation wizard for October
+# drug-request-server
+Заявки на лекарственные средства (Серверная часть)
+
+[Документация тут] (https://github.com/digorec/drug-request-server/wiki)
+
+## Installation wizard for October
 
 The wizard installation is a recommended way to install October. It is simpler than the command-line installation and doesn't require any special skills.
 
