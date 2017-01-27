@@ -1,6 +1,14 @@
 title = "Demonstration"
 url = "/"
 layout = "default"
+is_hidden = 0
+==
+<?php
+function onStart()
+{
+    return Redirect::to('/backend');
+}
+?>
 ==
 <div class="jumbotron">
     <div class="container">
