@@ -37,8 +37,7 @@ class Plugin extends PluginBase
             if (!$model instanceof UserModel)
                 return;
 
-            $configFile = __DIR__ . '/models/user/columns.yaml';
-            $config = Yaml::parse(File::get($configFile));
+            $config = $this->loadYamlFromFile('/models/user/columns.yaml');
             $widget->addColumns($config);
         });
 
@@ -48,9 +47,14 @@ class Plugin extends PluginBase
                 return;
             }
 
-            $configFile = __DIR__ . '/models/user/fields.yaml';
-            $config = Yaml::parse(File::get($configFile));
+            $config = $this->loadYamlFromFile('/models/user/fields.yaml');
             $widget->addTabFields($config);
         });
+    }
+
+    private function loadYamlFromFile($filePath)
+    {
+        $configFile = __DIR__ . $filePath;
+        return Yaml::parse(File::get($configFile));
     }
 }
