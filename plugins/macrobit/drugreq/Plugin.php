@@ -26,13 +26,22 @@ class Plugin extends PluginBase
 
     private function extendUserModel()
     {
-        UserModel::extend(function($model) {
+        UserModel::extend(function ($model) {
             $model->implement[] = 'Macrobit.Drugreq.Behaviors.UserModel';
         });
     }
 
     private function extendUsersController()
     {
+        UsersController::extendListColumns(function ($widget, $model) {
+            if (!$model instanceof UserModel)
+                return;
+
+            $configFile = __DIR__ . '/models/user/columns.yaml';
+            $config = Yaml::parse(File::get($configFile));
+            $widget->addColumns($config);
+        });
+
         UsersController::extendFormFields(function ($widget) {
             // Prevent extending of related form instead of the intended User form
             if (!$widget->model instanceof UserModel) {
