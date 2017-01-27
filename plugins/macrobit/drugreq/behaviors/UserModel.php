@@ -1,5 +1,6 @@
 <?php namespace Macrobit\Drugreq\Behaviors;
 
+use Macrobit\Drugreq\Models\Lpu;
 use System\Classes\ModelBehavior;
 
 /**
@@ -23,7 +24,8 @@ class UserModel extends ModelBehavior
         $this->extendModelWithLpu($model);
     }
 
-    private function extendModelWithLpu($model) {
+    private function extendModelWithLpu($model)
+    {
         // Add lpu_id field to mass assignment fields.
         $model->addFillable([
             'lpu_id',
@@ -31,5 +33,15 @@ class UserModel extends ModelBehavior
 
         // Define relation.
         $model->belongsTo['lpu'] = 'Macrobit\Drugreq\Models\Lpu';
+    }
+
+    public function getLpuOptions()
+    {
+        return Lpu::getNameList();
+    }
+
+    public function setLpuIdAttribute($value)
+    {
+        $this->model->attributes['lpu_id'] = $value ?: null;
     }
 }

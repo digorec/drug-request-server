@@ -8,7 +8,8 @@
         'backend-menu-item-name' => 'LPU',
     ],
     'profile' => [
-        'lpu' => 'LPU'
+        'lpu' => 'LPU',
+        'lpu-empty-option' => 'None'
     ],
     'tab' => [
         'profile' => 'Profile',

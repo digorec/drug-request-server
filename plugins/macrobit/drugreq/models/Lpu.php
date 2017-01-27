@@ -8,7 +8,6 @@ use Model;
 class Lpu extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
     use \October\Rain\Database\Traits\SoftDelete;
 
     protected $dates = ['deleted_at'];
@@ -23,4 +22,18 @@ class Lpu extends Model
      * @var string The database table used by the model.
      */
     public $table = 'macrobit_drugreq_lpus';
+
+    /**
+     * @var array Cache for getNameList() method
+     */
+    private static $nameList = null;
+
+    public static function getNameList()
+    {
+        if (static::$nameList) {
+            return static::$nameList;
+        }
+
+        return static::$nameList = static::lists('name', 'id');
+    }
 }
