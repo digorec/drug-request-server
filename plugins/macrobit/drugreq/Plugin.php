@@ -20,7 +20,15 @@ class Plugin extends PluginBase
     {
         parent::boot();
 
+        $this->extendUserModel();
         $this->extendUsersController();
+    }
+
+    private function extendUserModel()
+    {
+        UserModel::extend(function($model) {
+            $model->implement[] = 'Macrobit.Drugreq.Behaviors.UserModel';
+        });
     }
 
     private function extendUsersController()

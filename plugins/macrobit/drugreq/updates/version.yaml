@@ -3,3 +3,6 @@
 1.0.2:
     - 'Created table macrobit_drugreq_lpus'
     - builder_table_create_macrobit_drugreq_lpus.php
+1.0.3:
+    - 'Add lpu_id to backend user'
+    - add_lpu_id_to_backend_users_table.php
