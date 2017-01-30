@@ -5,7 +5,7 @@ use Model;
 /**
  * Model
  */
-class RequestCampaign extends Model
+class Request extends Model
 {
     use \October\Rain\Database\Traits\Validation;
     use \October\Rain\Database\Traits\SoftDelete;
@@ -21,12 +21,13 @@ class RequestCampaign extends Model
     /**
      * @var string The database table used by the model.
      */
-    public $table = 'macrobit_drugreq_request_campaigns';
+    public $table = 'macrobit_drugreq_requests';
 
     /**
      * @var array Relations
      */
-    public $hasMany = [
-        'requests' => 'Macrobit\Drugreq\Models\Request'
+    public $belongsTo = [
+        'lpu' => 'Macrobit\Drugreq\Models\Lpu',
+        'requestCampaign' => 'Macrobit\Drugreq\Models\RequestCampaign',
     ];
 }

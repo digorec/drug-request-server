@@ -1,0 +1,14 @@
+columns:
+    lpu:
+        label: 'macrobit.drugreq::lang.tab.lpu'
+        type: text
+        select: name
+        relation: lpu
+    request_campaign:
+        label: 'macrobit.drugreq::lang.tab.request-campaign'
+        type: text
+        select: name
+        relation: requestCampaign
+    status:
+        label: 'macrobit.drugreq::lang.request.status'
+        type: text
