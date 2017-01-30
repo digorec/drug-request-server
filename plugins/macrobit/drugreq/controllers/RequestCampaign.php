@@ -3,7 +3,7 @@
 use Backend\Classes\Controller;
 use BackendMenu;
 
-class Lpu extends Controller
+class RequestCampaign extends Controller
 {
     public $implement = ['Backend\Behaviors\ListController','Backend\Behaviors\FormController'];
     
@@ -13,6 +13,6 @@ class Lpu extends Controller
     public function __construct()
     {
         parent::__construct();
-        BackendMenu::setContext('Macrobit.Drugreq', 'lpu-menu-item');
+        BackendMenu::setContext('Macrobit.Drugreq', 'request-campaign-menu-item');
     }
 }
