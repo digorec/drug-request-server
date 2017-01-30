@@ -1,0 +1,21 @@
+fields:
+    name:
+        label: 'macrobit.drugreq::lang.request-campaign.name'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    start:
+        label: 'macrobit.drugreq::lang.request-campaign.start'
+        oc.commentPosition: ''
+        mode: date
+        span: auto
+        required: 1
+        type: datepicker
+    end:
+        label: 'macrobit.drugreq::lang.request-campaign.end'
+        oc.commentPosition: ''
+        mode: datetime
+        span: auto
+        required: 1
+        type: datepicker

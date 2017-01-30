@@ -9,9 +9,14 @@
     ],
     'profile' => [
         'lpu' => 'LPU',
-        'lpu-empty-option' => 'None'
+        'lpu-empty-option' => 'None',
     ],
     'tab' => [
         'profile' => 'Profile',
+    ],
+    'request-campaign' => [
+        'name' => 'Name',
+        'start' => 'Campaign Period Start',
+        'end' => 'Campaign Period End',
     ],
 ];
