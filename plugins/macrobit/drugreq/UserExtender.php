@@ -22,6 +22,12 @@ class UserExtender
 
     private function extendUsersController()
     {
+        $this->extendListBehavior();
+        $this->extendFormBehavior();
+    }
+
+    private function extendListBehavior()
+    {
         UsersController::extendListColumns(function ($widget, $model) {
             if (!$model instanceof UserModel) {
                 return;
@@ -34,7 +40,10 @@ class UserExtender
             $config = YamlUtils::parseFile(__DIR__ . '/models/user/columns.yaml');
             $widget->addColumns($config);
         });
+    }
 
+    private function extendFormBehavior()
+    {
         UsersController::extendFormFields(function ($widget) {
             // Prevent extending of related form instead of the intended User form
             if (!$widget->model instanceof UserModel) {
