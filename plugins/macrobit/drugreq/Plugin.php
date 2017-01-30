@@ -1,5 +1,6 @@
 <?php namespace Macrobit\Drugreq;
 
+use Backend\Facades\BackendAuth;
 use October\Rain\Support\Facades\File;
 use October\Rain\Support\Facades\Yaml;
 use Backend\Models\User as UserModel;
@@ -34,8 +35,13 @@ class Plugin extends PluginBase
     private function extendUsersController()
     {
         UsersController::extendListColumns(function ($widget, $model) {
-            if (!$model instanceof UserModel)
+            if (!$model instanceof UserModel) {
                 return;
+            }
+
+            if (!$this->checkPermissions()) {
+                return;
+            }
 
             $config = $this->loadYamlFromFile('/models/user/columns.yaml');
             $widget->addColumns($config);
@@ -44,6 +50,10 @@ class Plugin extends PluginBase
         UsersController::extendFormFields(function ($widget) {
             // Prevent extending of related form instead of the intended User form
             if (!$widget->model instanceof UserModel) {
+                return;
+            }
+
+            if (!$this->checkPermissions()) {
                 return;
             }
 
@@ -56,5 +66,11 @@ class Plugin extends PluginBase
     {
         $configFile = __DIR__ . $filePath;
         return Yaml::parse(File::get($configFile));
+    }
+
+    private function checkPermissions()
+    {
+        $user = BackendAuth::getUser();
+        return $user->hasAccess('macrobit.drugreq.access_lpu');
     }
 }

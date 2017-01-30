@@ -10,17 +10,17 @@ navigation:
         url: macrobit/drugreq/lpu
         icon: icon-ambulance
         permissions:
-            - access_lpu
+            - macrobit.drugreq.access_lpu
     request-campaign-menu-item:
         label: 'macrobit.drugreq::lang.request-campaign.backend-menu-item-name'
         url: macrobit/drugreq/requestcampaign
         icon: icon-calendar
         permissions:
-            - access_request_campaign
+            - macrobit.drugreq.access_request_campaign
 permissions:
-    access_lpu:
+    macrobit.drugreq.access_lpu:
         tab: 'macrobit.drugreq::lang.tab.lpu'
         label: 'macrobit.drugreq::lang.permission.access-lpu'
-    access_request_campaign:
+    macrobit.drugreq.access_request_campaign:
         tab: 'macrobit.drugreq::lang.tab.request-campaign'
         label: 'macrobit.drugreq::lang.permission.access-request-campaign'
