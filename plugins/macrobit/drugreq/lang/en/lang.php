@@ -18,5 +18,6 @@
         'name' => 'Name',
         'start' => 'Campaign Period Start',
         'end' => 'Campaign Period End',
+        'backend-menu-item-name' => 'Request Campaigns',
     ],
 ];

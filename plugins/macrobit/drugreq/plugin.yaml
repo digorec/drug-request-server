@@ -9,3 +9,7 @@ navigation:
         label: 'macrobit.drugreq::lang.lpu.backend-menu-item-name'
         url: macrobit/drugreq/lpu
         icon: icon-ambulance
+    request-campaign-menu-item:
+        label: 'macrobit.drugreq::lang.request-campaign.backend-menu-item-name'
+        url: macrobit/drugreq/requestcampaign
+        icon: icon-calendar
