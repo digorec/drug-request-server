@@ -9,3 +9,9 @@
 1.0.4:
     - 'Created table macrobit_drugreq_request_campaigns'
     - builder_table_create_macrobit_drugreq_request_campaigns.php
+1.0.5:
+    - 'Created table macrobit_drugreq_requests'
+    - builder_table_create_macrobit_drugreq_requests.php
+1.0.6:
+    - 'Add indexes to requests table'
+    - add_indexes_to_requests_table.php
