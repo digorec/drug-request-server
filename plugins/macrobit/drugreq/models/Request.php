@@ -30,4 +30,12 @@ class Request extends Model
         'lpu' => 'Macrobit\Drugreq\Models\Lpu',
         'requestCampaign' => 'Macrobit\Drugreq\Models\RequestCampaign',
     ];
+
+    public static function requestedForCampaignAndLpu(
+        RequestCampaign $requestCampaign, Lpu $lpu)
+    {
+        return static::where('request_campaign_id', $requestCampaign->id)
+            ->where('lpu_id', $lpu->id)
+            ->exists();
+    }
 }

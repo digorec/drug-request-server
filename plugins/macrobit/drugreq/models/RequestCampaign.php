@@ -1,5 +1,6 @@
 <?php namespace Macrobit\Drugreq\Models;
 
+use Carbon\Carbon;
 use Model;
 
 /**
@@ -30,8 +31,12 @@ class RequestCampaign extends Model
         'requests' => 'Macrobit\Drugreq\Models\Request'
     ];
 
-    public static function isActiveNow()
+    public static function firstActiveNow()
     {
+        $now = Carbon::now();
 
+        return static::where('start', '<', $now)
+            ->where('end', '>', $now)
+            ->first();
     }
 }
