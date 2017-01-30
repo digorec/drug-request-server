@@ -6,3 +6,6 @@
 1.0.3:
     - 'Add lpu_id to backend user'
     - add_lpu_id_to_backend_users_table.php
+1.0.4:
+    - 'Created table macrobit_drugreq_request_campaigns'
+    - builder_table_create_macrobit_drugreq_request_campaigns.php
