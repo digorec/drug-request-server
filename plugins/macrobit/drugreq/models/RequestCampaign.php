@@ -29,4 +29,9 @@ class RequestCampaign extends Model
     public $hasMany = [
         'requests' => 'Macrobit\Drugreq\Models\Request'
     ];
+
+    public static function isActiveNow()
+    {
+
+    }
 }
