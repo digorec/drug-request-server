@@ -15,7 +15,7 @@ fields:
     end:
         label: 'macrobit.drugreq::lang.request-campaign.end'
         oc.commentPosition: ''
-        mode: datetime
+        mode: date
         span: auto
         required: 1
         type: datepicker
