@@ -11,7 +11,7 @@ class Request extends Controller
 {
     public $implement = ['Backend\Behaviors\ListController',
         'Backend\Behaviors\FormController'];
-    
+
     public $listConfig = 'config_list.yaml';
     public $formConfig = 'config_form.yaml';
 
@@ -43,7 +43,10 @@ class Request extends Controller
      */
     public function formExtendModel($model)
     {
-        // TODO: check if lpu and requestCampaign already exist.
+        // Do not update already set fields.
+        if (isset($model->lpu_id) && isset($model->request_campaign_id)) {
+            return $model;
+        }
 
         // Check if user's lpu exists.
         $user = BackendAuth::getUser();
