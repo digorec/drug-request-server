@@ -15,3 +15,15 @@
 1.0.6:
     - 'Add indexes to requests table'
     - add_indexes_to_requests_table.php
+1.0.7:
+    - 'Created table macrobit_drugreq_request_record_drugs'
+    - builder_table_create_macrobit_drugreq_request_record_drugs.php
+1.0.8:
+    - 'Created table macrobit_drugreq_request_record_stuff'
+    - builder_table_create_macrobit_drugreq_request_record_stuff.php
+1.0.9:
+    - 'Add indexes to request record tables'
+    - add_indexes_to_request_record_tables.php
+1.0.10:
+    - 'Add json fields to request record tables'
+    - add_json_fields_to_request_record_tables.php
