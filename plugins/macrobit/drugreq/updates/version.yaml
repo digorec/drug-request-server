@@ -27,3 +27,9 @@
 1.0.10:
     - 'Add json fields to request record tables'
     - add_json_fields_to_request_record_tables.php
+1.0.11:
+    - 'Updated table macrobit_drugreq_request_record_drugs'
+    - builder_table_update_macrobit_drugreq_request_record_drugs.php
+1.0.12:
+    - 'Updated table macrobit_drugreq_request_record_stuff'
+    - builder_table_update_macrobit_drugreq_request_record_stuff.php

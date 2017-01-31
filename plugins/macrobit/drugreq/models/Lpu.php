@@ -29,18 +29,4 @@ class Lpu extends Model
     public $hasMany = [
         'requests' => 'Macrobit\Drugreq\Models\Request'
     ];
-
-    /**
-     * @var array Cache for getNameList() method
-     */
-    private static $nameList = null;
-
-    public static function getNameList()
-    {
-        if (static::$nameList) {
-            return static::$nameList;
-        }
-
-        return static::$nameList = static::lists('name', 'id');
-    }
 }
