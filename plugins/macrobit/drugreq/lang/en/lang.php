@@ -37,4 +37,10 @@
         'unit' => 'Unit of measurement',
         'backend-menu-item-name' => 'Drugs',
     ],
+    'stuff' => [
+        'backend-menu-item-name' => 'Stuff',
+        'name' => 'Name',
+        'characteristics' => 'Characteristics',
+        'unit' => 'Unit of measurement',
+    ],
 ];
