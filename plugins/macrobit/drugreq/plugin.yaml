@@ -17,6 +17,10 @@ navigation:
         icon: icon-calendar
         permissions:
             - macrobit.drugreq.access_request_campaign
+    request-menu-item:
+        label: 'macrobit.drugreq::lang.request.backend-menu-item-name'
+        url: macrobit/drugreq/request
+        icon: icon-file
 permissions:
     macrobit.drugreq.access_lpu:
         tab: 'macrobit.drugreq::lang.tab.lpu'

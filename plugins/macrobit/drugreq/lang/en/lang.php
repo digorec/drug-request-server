@@ -26,4 +26,8 @@
         'access-lpu' => 'Can access the LPU',
         'access-request-campaign' => 'Can access the Request Campaign',
     ],
+    'request' => [
+        'status' => 'Status',
+        'backend-menu-item-name' => 'Requests',
+    ],
 ];

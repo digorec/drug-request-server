@@ -1,5 +1,6 @@
 <?php namespace Macrobit\Drugreq\Models;
 
+use Carbon\Carbon;
 use Model;
 
 /**
@@ -8,7 +9,6 @@ use Model;
 class RequestCampaign extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
     use \October\Rain\Database\Traits\SoftDelete;
 
     protected $dates = ['deleted_at'];
@@ -23,4 +23,20 @@ class RequestCampaign extends Model
      * @var string The database table used by the model.
      */
     public $table = 'macrobit_drugreq_request_campaigns';
+
+    /**
+     * @var array Relations
+     */
+    public $hasMany = [
+        'requests' => 'Macrobit\Drugreq\Models\Request'
+    ];
+
+    public static function firstActiveNow()
+    {
+        $now = Carbon::now();
+
+        return static::where('start', '<', $now)
+            ->where('end', '>', $now)
+            ->first();
+    }
 }

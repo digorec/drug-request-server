@@ -1,0 +1,11 @@
+list: $/macrobit/drugreq/models/request/columns.yaml
+modelClass: Macrobit\Drugreq\Models\Request
+title: Request
+noRecordsMessage: 'backend::lang.list.no_records'
+showSetup: true
+showCheckboxes: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: 'backend::lang.list.search_prompt'
+recordUrl: 'macrobit/drugreq/request/update/:id'
