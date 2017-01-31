@@ -33,3 +33,6 @@
 1.0.12:
     - 'Updated table macrobit_drugreq_request_record_stuff'
     - builder_table_update_macrobit_drugreq_request_record_stuff.php
+1.0.13:
+    - 'Created table macrobit_drugreq_drugs'
+    - builder_table_create_macrobit_drugreq_drugs.php

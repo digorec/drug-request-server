@@ -30,4 +30,11 @@
         'status' => 'Status',
         'backend-menu-item-name' => 'Requests',
     ],
+    'drug' => [
+        'inn' => 'International Nonproprietary Name',
+        'form' => 'Form',
+        'dose' => 'Dose',
+        'unit' => 'Unit of measurement',
+        'backend-menu-item-name' => 'Drugs',
+    ],
 ];

@@ -21,6 +21,10 @@ navigation:
         label: 'macrobit.drugreq::lang.request.backend-menu-item-name'
         url: macrobit/drugreq/request
         icon: icon-file
+    drug-menu-item:
+        label: 'macrobit.drugreq::lang.drug.backend-menu-item-name'
+        url: macrobit/drugreq/drug
+        icon: icon-medkit
 permissions:
     macrobit.drugreq.access_lpu:
         tab: 'macrobit.drugreq::lang.tab.lpu'
