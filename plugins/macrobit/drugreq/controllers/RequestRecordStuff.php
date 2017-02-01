@@ -13,4 +13,20 @@ class RequestRecordStuff extends Controller
     {
         parent::__construct();
     }
+
+    /**
+     * Extend supplied model used by create and update actions, the model can
+     * be altered by overriding it in the controller.
+     * @param \Macrobit\Drugreq\Models\RequestRecordStuff $model
+     * @return \Macrobit\Drugreq\Models\RequestRecordStuff
+     */
+    public function formExtendModel($model)
+    {
+        $requestId = input('requestid');
+        if (isset($requestId)) {
+            $model->request_id = $requestId;
+        }
+
+        return $model;
+    }
 }

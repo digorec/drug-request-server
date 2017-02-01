@@ -24,9 +24,6 @@
 1.0.9:
     - 'Add indexes to request record tables'
     - add_indexes_to_request_record_tables.php
-1.0.10:
-    - 'Add json fields to request record tables'
-    - add_json_fields_to_request_record_tables.php
 1.0.11:
     - 'Updated table macrobit_drugreq_request_record_drugs'
     - builder_table_update_macrobit_drugreq_request_record_drugs.php
@@ -42,3 +39,6 @@
 1.0.15:
     - 'Add stuff_id to request record stuff table'
     - add_stuff_id_to_request_record_stuff_table.php
+1.0.16:
+    - 'Make json fields nullable'
+    - add_json_fields_to_request_record_tables.php

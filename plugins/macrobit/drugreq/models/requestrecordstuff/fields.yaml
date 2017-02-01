@@ -12,29 +12,35 @@ fields:
         label: 'macrobit.drugreq::lang.stuff.name'
         oc.commentPosition: ''
         span: left
-        disabled: 1
+        disabled: 0
         required: 1
         dependsOn:
             - stuff
+        attributes:
+            readonly: 'true'
         type: text
     unit:
         label: 'macrobit.drugreq::lang.stuff.unit'
         oc.commentPosition: ''
         span: auto
-        disabled: 1
+        disabled: 0
         required: 1
         dependsOn:
             - stuff
+        attributes:
+            readonly: 'true'
         type: text
     characteristics:
         label: 'macrobit.drugreq::lang.stuff.characteristics'
         size: ''
         oc.commentPosition: ''
         span: full
-        disabled: 1
+        disabled: 0
         required: 0
         dependsOn:
             - stuff
+        attributes:
+            readonly: 'true'
         type: textarea
     sectioncustom:
         label: 'macrobit.drugreq::lang.request-record.form-header'
@@ -58,3 +64,7 @@ fields:
         oc.commentPosition: ''
         span: auto
         type: textarea
+    partialrequest:
+        span: auto
+        path: $/macrobit/drugreq/controllers/requestrecordstuff/_requestid.htm
+        type: partial
