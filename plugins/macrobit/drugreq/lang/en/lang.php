@@ -43,4 +43,11 @@
         'characteristics' => 'Characteristics',
         'unit' => 'Unit of measurement',
     ],
+    'request-record' => [
+        'count' => 'Count',
+        'additional-characteristics' => 'Additional characteristics',
+        'note' => 'Note',
+        'form-header' => 'Custom data',
+        'choose-a-record' => 'Choose a record',
+    ],
 ];

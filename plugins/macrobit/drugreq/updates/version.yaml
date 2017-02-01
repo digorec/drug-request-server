@@ -39,3 +39,6 @@
 1.0.14:
     - 'Created table macrobit_drugreq_stuff'
     - builder_table_create_macrobit_drugreq_stuff.php
+1.0.15:
+    - 'Add stuff_id to request record stuff table'
+    - add_stuff_id_to_request_record_stuff_table.php

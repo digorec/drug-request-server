@@ -1,6 +1,6 @@
 fields:
     stuff:
-        label: 'Record finder'
+        label: 'macrobit.drugreq::lang.request-record.choose-a-record'
         oc.commentPosition: ''
         nameFrom: name
         descriptionFrom: ''
@@ -35,4 +35,26 @@ fields:
         required: 0
         dependsOn:
             - stuff
+        type: textarea
+    sectioncustom:
+        label: 'macrobit.drugreq::lang.request-record.form-header'
+        span: full
+        type: section
+    count:
+        label: 'macrobit.drugreq::lang.request-record.count'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: number
+    additional_characteristics:
+        label: 'macrobit.drugreq::lang.request-record.additional-characteristics'
+        size: ''
+        oc.commentPosition: ''
+        span: left
+        type: textarea
+    note:
+        label: 'macrobit.drugreq::lang.request-record.note'
+        size: ''
+        oc.commentPosition: ''
+        span: auto
         type: textarea
