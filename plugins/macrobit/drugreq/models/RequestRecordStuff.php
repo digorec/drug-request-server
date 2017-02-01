@@ -16,7 +16,9 @@ class RequestRecordStuff extends Model
      * Validation
      */
     public $rules = [
-        'name' => 'required'
+        'name' => 'required',
+        'unit' => 'required',
+        'count' => 'required|numeric',
     ];
 
     /**
