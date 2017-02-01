@@ -23,4 +23,19 @@ class RequestRecordStuff extends Model
      * @var string The database table used by the model.
      */
     public $table = 'macrobit_drugreq_request_record_stuff';
+
+    /**
+     * @var array Relations
+     */
+    public $belongsTo = [
+        'stuff' => 'Macrobit\Drugreq\Models\Stuff',
+    ];
+
+    // Update request record fields when stuff is selected
+    public function filterFields($fields, $context = null)
+    {
+        $fields->name->value = $this->stuff['name'];
+        $fields->characteristics->value = $this->stuff['characteristics'];
+        $fields->unit->value = $this->stuff['unit'];
+    }
 }

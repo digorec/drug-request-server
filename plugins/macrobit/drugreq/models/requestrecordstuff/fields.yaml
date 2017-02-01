@@ -1,0 +1,38 @@
+fields:
+    stuff:
+        label: 'Record finder'
+        oc.commentPosition: ''
+        nameFrom: name
+        descriptionFrom: ''
+        list: $/macrobit/drugreq/models/stuff/columns.yaml
+        span: auto
+        required: 0
+        type: recordfinder
+    name:
+        label: 'macrobit.drugreq::lang.stuff.name'
+        oc.commentPosition: ''
+        span: left
+        disabled: 1
+        required: 1
+        dependsOn:
+            - stuff
+        type: text
+    unit:
+        label: 'macrobit.drugreq::lang.stuff.unit'
+        oc.commentPosition: ''
+        span: auto
+        disabled: 1
+        required: 1
+        dependsOn:
+            - stuff
+        type: text
+    characteristics:
+        label: 'macrobit.drugreq::lang.stuff.characteristics'
+        size: ''
+        oc.commentPosition: ''
+        span: full
+        disabled: 1
+        required: 0
+        dependsOn:
+            - stuff
+        type: textarea
