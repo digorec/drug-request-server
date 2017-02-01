@@ -29,6 +29,7 @@
     'request' => [
         'status' => 'Status',
         'backend-menu-item-name' => 'Requests',
+        'section-stuff' => 'Requests for stuff',
     ],
     'drug' => [
         'inn' => 'International Nonproprietary Name',
@@ -49,5 +50,11 @@
         'note' => 'Note',
         'form-header' => 'Custom data',
         'choose-a-record' => 'Choose a record',
+    ],
+    'request-record-stuff' => [
+        'create' => 'Add a stuff',
+    ],
+    'request-record-drug' => [
+        'create' => 'Add a drug',
     ],
 ];

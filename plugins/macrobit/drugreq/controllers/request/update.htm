@@ -14,6 +14,18 @@
         </div>
 
         <div class="form-buttons">
+            <a class="btn btn-default"
+               href="<?= Backend::url("macrobit/drugreq/requestrecordstuff/create?requestid={$formModel->attributes['id']}") ?>">
+                <?= e(trans('macrobit.drugreq::lang.request-record-stuff.create')) ?>
+            </a>
+
+            <a class="btn btn-default"
+               href="<?= Backend::url("macrobit/drugreq/requestrecorddrug/create?requestid={$formModel->attributes['id']}") ?>">
+                <?= e(trans('macrobit.drugreq::lang.request-record-drug.create')) ?>
+            </a>
+        </div>
+
+        <div class="form-buttons">
             <div class="loading-indicator-container">
                 <button
                     type="submit"

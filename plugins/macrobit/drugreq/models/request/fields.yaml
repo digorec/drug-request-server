@@ -1,7 +1,5 @@
 fields:
-    status:
-        label: 'macrobit.drugreq::lang.request.status'
-        span: auto
-        oc.commentPosition: ''
-        required: 1
-        type: text
+    sectionstuff:
+        label: 'macrobit.drugreq::lang.request.section-stuff'
+        span: full
+        type: section
