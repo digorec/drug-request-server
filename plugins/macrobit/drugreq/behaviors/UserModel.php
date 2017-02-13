@@ -35,11 +35,6 @@ class UserModel extends ModelBehavior
         $model->belongsTo['lpu'] = 'Macrobit\Drugreq\Models\Lpu';
     }
 
-    public function getLpuOptions()
-    {
-        return Lpu::getNameList();
-    }
-
     public function setLpuIdAttribute($value)
     {
         $this->model->attributes['lpu_id'] = $value ?: null;

@@ -1,0 +1,10 @@
+columns:
+    name:
+        label: 'macrobit.drugreq::lang.stuff.name'
+        type: text
+    unit:
+        label: 'macrobit.drugreq::lang.stuff.unit'
+        type: text
+    characteristics:
+        label: 'macrobit.drugreq::lang.stuff.characteristics'
+        type: text

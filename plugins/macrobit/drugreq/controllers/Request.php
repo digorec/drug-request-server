@@ -5,6 +5,7 @@ use Backend\Facades\BackendAuth;
 use BackendMenu;
 use Illuminate\Support\Facades\Redirect;
 use Macrobit\Drugreq\Models\RequestCampaign;
+use Macrobit\Drugreq\Models\RequestStatus;
 use Macrobit\Drugreq\Utils\RequestUtils;
 
 class Request extends Controller
@@ -43,6 +44,11 @@ class Request extends Controller
      */
     public function formExtendModel($model)
     {
+        // Set status for created records.
+        if (empty($model->status)) {
+            $model->status = RequestStatus::CREATED;
+        }
+
         // Do not update already set fields.
         if (isset($model->lpu_id) && isset($model->request_campaign_id)) {
             return $model;

@@ -38,4 +38,9 @@ class Request extends Model
             ->where('lpu_id', $lpu->id)
             ->exists();
     }
+
+    public function getDataTableOptions($table, $field, $data)
+    {
+        return [];
+    }
 }

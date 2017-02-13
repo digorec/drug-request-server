@@ -1,0 +1,70 @@
+fields:
+    stuff:
+        label: 'macrobit.drugreq::lang.request-record.choose-a-record'
+        oc.commentPosition: ''
+        nameFrom: name
+        descriptionFrom: ''
+        list: $/macrobit/drugreq/models/stuff/columns.yaml
+        span: auto
+        required: 0
+        type: recordfinder
+    name:
+        label: 'macrobit.drugreq::lang.stuff.name'
+        oc.commentPosition: ''
+        span: left
+        disabled: 0
+        required: 1
+        dependsOn:
+            - stuff
+        attributes:
+            readonly: 'true'
+        type: text
+    unit:
+        label: 'macrobit.drugreq::lang.stuff.unit'
+        oc.commentPosition: ''
+        span: auto
+        disabled: 0
+        required: 1
+        dependsOn:
+            - stuff
+        attributes:
+            readonly: 'true'
+        type: text
+    characteristics:
+        label: 'macrobit.drugreq::lang.stuff.characteristics'
+        size: ''
+        oc.commentPosition: ''
+        span: full
+        disabled: 0
+        required: 0
+        dependsOn:
+            - stuff
+        attributes:
+            readonly: 'true'
+        type: textarea
+    sectioncustom:
+        label: 'macrobit.drugreq::lang.request-record.form-header'
+        span: full
+        type: section
+    count:
+        label: 'macrobit.drugreq::lang.request-record.count'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: number
+    additional_characteristics:
+        label: 'macrobit.drugreq::lang.request-record.additional-characteristics'
+        size: ''
+        oc.commentPosition: ''
+        span: left
+        type: textarea
+    note:
+        label: 'macrobit.drugreq::lang.request-record.note'
+        size: ''
+        oc.commentPosition: ''
+        span: auto
+        type: textarea
+    partialrequest:
+        span: auto
+        path: $/macrobit/drugreq/controllers/requestrecordstuff/_requestid.htm
+        type: partial
