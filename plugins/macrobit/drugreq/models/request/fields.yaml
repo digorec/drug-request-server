@@ -3,3 +3,10 @@ fields:
         label: 'macrobit.drugreq::lang.request.section-stuff'
         span: full
         type: section
+    stufftems:
+        label: 'macrobit.drugreq::lang.stuff.backend-menu-item-name'
+        type: datatable
+        columns:
+            stuffname:
+                title: 'macrobit.drugreq::lang.stuff.name'
+                type: dropdown

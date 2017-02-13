@@ -8,7 +8,6 @@ use Model;
 class Stuff extends Model
 {
     use \October\Rain\Database\Traits\Validation;
-    
     use \October\Rain\Database\Traits\SoftDelete;
 
     protected $dates = ['deleted_at'];
@@ -17,6 +16,8 @@ class Stuff extends Model
      * Validation
      */
     public $rules = [
+        'name' => 'required',
+        'unit' => 'required',
     ];
 
     /**
