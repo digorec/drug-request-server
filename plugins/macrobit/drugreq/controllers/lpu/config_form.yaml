@@ -1,0 +1,10 @@
+name: Lpu
+form: $/macrobit/drugreq/models/lpu/fields.yaml
+modelClass: Macrobit\Drugreq\Models\Lpu
+defaultRedirect: macrobit/drugreq/lpu
+create:
+    redirect: 'macrobit/drugreq/lpu/update/:id'
+    redirectClose: macrobit/drugreq/lpu
+update:
+    redirect: macrobit/drugreq/lpu
+    redirectClose: macrobit/drugreq/lpu

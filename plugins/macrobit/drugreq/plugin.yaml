@@ -1,0 +1,39 @@
+plugin:
+    name: 'macrobit.drugreq::lang.plugin.name'
+    description: 'macrobit.drugreq::lang.plugin.description'
+    author: Macrobit
+    icon: oc-icon-medkit
+    homepage: ''
+navigation:
+    lpu-menu-item:
+        label: 'macrobit.drugreq::lang.lpu.backend-menu-item-name'
+        url: macrobit/drugreq/lpu
+        icon: icon-ambulance
+        permissions:
+            - macrobit.drugreq.access_lpu
+    request-campaign-menu-item:
+        label: 'macrobit.drugreq::lang.request-campaign.backend-menu-item-name'
+        url: macrobit/drugreq/requestcampaign
+        icon: icon-calendar
+        permissions:
+            - macrobit.drugreq.access_request_campaign
+    request-menu-item:
+        label: 'macrobit.drugreq::lang.request.backend-menu-item-name'
+        url: macrobit/drugreq/request
+        icon: icon-file
+    drug-menu-item:
+        label: 'macrobit.drugreq::lang.drug.backend-menu-item-name'
+        url: macrobit/drugreq/drug
+        icon: icon-medkit
+    stuff-menu-item:
+        label: 'macrobit.drugreq::lang.stuff.backend-menu-item-name'
+        url: macrobit/drugreq/stuff
+        icon: icon-pencil-square
+
+permissions:
+    macrobit.drugreq.access_lpu:
+        tab: 'macrobit.drugreq::lang.tab.lpu'
+        label: 'macrobit.drugreq::lang.permission.access-lpu'
+    macrobit.drugreq.access_request_campaign:
+        tab: 'macrobit.drugreq::lang.tab.request-campaign'
+        label: 'macrobit.drugreq::lang.permission.access-request-campaign'

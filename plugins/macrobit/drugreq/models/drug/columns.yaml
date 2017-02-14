@@ -1,0 +1,13 @@
+columns:
+    inn:
+        label: 'macrobit.drugreq::lang.drug.inn'
+        type: text
+    form:
+        label: 'macrobit.drugreq::lang.drug.form'
+        type: text
+    dose:
+        label: 'macrobit.drugreq::lang.drug.dose'
+        type: number
+    unit:
+        label: 'macrobit.drugreq::lang.drug.unit'
+        type: text

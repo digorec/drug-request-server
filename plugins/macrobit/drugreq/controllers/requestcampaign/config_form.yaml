@@ -1,0 +1,10 @@
+name: RequestCampaign
+form: $/macrobit/drugreq/models/requestcampaign/fields.yaml
+modelClass: Macrobit\Drugreq\Models\RequestCampaign
+defaultRedirect: macrobit/drugreq/requestcampaign
+create:
+    redirect: 'macrobit/drugreq/requestcampaign/update/:id'
+    redirectClose: macrobit/drugreq/requestcampaign
+update:
+    redirect: macrobit/drugreq/requestcampaign
+    redirectClose: macrobit/drugreq/requestcampaign

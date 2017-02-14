@@ -1,0 +1,25 @@
+fields:
+    inn:
+        label: 'macrobit.drugreq::lang.drug.inn'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    form:
+        label: 'macrobit.drugreq::lang.drug.form'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    dose:
+        label: 'macrobit.drugreq::lang.drug.dose'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: number
+    unit:
+        label: 'macrobit.drugreq::lang.drug.unit'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text

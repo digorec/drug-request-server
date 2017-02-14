@@ -1,0 +1,10 @@
+columns:
+    name:
+        label: 'macrobit.drugreq::lang.request-campaign.name'
+        type: text
+    start:
+        label: 'macrobit.drugreq::lang.request-campaign.start'
+        type: date
+    end:
+        label: 'macrobit.drugreq::lang.request-campaign.end'
+        type: date

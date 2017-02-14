@@ -1,0 +1,4 @@
+columns:
+    name:
+        label: 'macrobit.drugreq::lang.lpu.name'
+        type: text

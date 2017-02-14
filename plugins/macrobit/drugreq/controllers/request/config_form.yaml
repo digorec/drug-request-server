@@ -1,0 +1,10 @@
+name: Request
+form: $/macrobit/drugreq/models/request/fields.yaml
+modelClass: Macrobit\Drugreq\Models\Request
+defaultRedirect: macrobit/drugreq/request
+create:
+    redirect: 'macrobit/drugreq/request/update/:id'
+    redirectClose: macrobit/drugreq/request
+update:
+    redirect: macrobit/drugreq/request
+    redirectClose: macrobit/drugreq/request

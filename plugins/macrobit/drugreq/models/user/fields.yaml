@@ -1,0 +1,11 @@
+# ===================================
+#  Extended User Field Definitions
+# ===================================
+
+lpu:
+    label: 'macrobit.drugreq::lang.profile.lpu'
+    tab: 'macrobit.drugreq::lang.tab.profile'
+    type: relation
+    nameFrom: name
+    emptyOption: 'macrobit.drugreq::lang.profile.lpu-empty-option'
+    span: auto

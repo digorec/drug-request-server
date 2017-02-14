@@ -1,0 +1,4 @@
+lpu:
+    label: 'macrobit.drugreq::lang.profile.lpu'
+    relation: lpu
+    select: name
